@@ -1,7 +1,9 @@
 const fs = require('fs')
 
+const FILENAME = 'triangle.txt'
+
 const start = () => {
-  let triangle = getTriangleArray('test.txt')
+  let triangle = getTriangleArray(FILENAME)
   let max = findMax(triangle)
   console.log(`Max is: ${max}`)
 }
