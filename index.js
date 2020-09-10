@@ -19,7 +19,7 @@ const findMax = (triangle) => {
 
 const getTriangleArray = (filename) => {
   let lines = fs.readFileSync(filename, 'utf8').split('\n')
-  let arr = []
+  let triangle = []
 
   for (let i = 0; i < lines.length; i++) {
     let nums = []
@@ -31,11 +31,11 @@ const getTriangleArray = (filename) => {
     })
 
     if (nums.length) {
-      arr.push(nums)
+      triangle.push(nums)
     }
   }
 
-  return arr
+  return triangle
 }
 
 start()
