@@ -23,8 +23,8 @@ const getTriangleArray = (filename) => {
 
   for (let i = 0; i < lines.length; i++) {
     let nums = []
-    lines[i].split(' ').forEach((n) => {
-      let num = parseInt(n, 10)
+    lines[i].split(' ').forEach((s) => {
+      let num = parseInt(s, 10)
       if (!Number.isNaN(num)) {
         nums.push(num)
       }
