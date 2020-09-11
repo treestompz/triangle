@@ -11,3 +11,7 @@ For example, given the following triangle:
 ```
 
 We compute a max sum via: `5 + 9 + 6 + 7 = 27`.
+
+## Run
+
+`node index.js`
